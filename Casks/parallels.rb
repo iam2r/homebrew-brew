@@ -10,36 +10,7 @@ cask "parallels" do
     desc "Desktop virtualization software"
     homepage "https://www.parallels.com/products/desktop/"
 
-    livecheck do
-    url "https://kb.parallels.com/129860"
-    regex(/<h2[^>]*?>[^<]*?(\d+(?:\.\d+)+)(?:\s*|&nbsp;)\((\d+)\)/i)
-    strategy :page_match do |page, regex|
-        page.scan(regex).map { |match| "#{match[0]}-#{match[1]}" }
-    end
-    end
-
-    conflicts_with cask: [
-    "homebrew/cask-versions/parallels18",
-    ]
-
     app "Parallels Desktop.app"
-
-    preflight do
-    system_command "chflags",
-                    args: ["nohidden", "#{staged_path}/Parallels Desktop.app"]
-    system_command "xattr",
-                    args: ["-d", "com.apple.FinderInfo", "#{staged_path}/Parallels Desktop.app"]
-    end
-
-    postflight do
-    system_command "#{appdir}/Parallels Desktop.app/Contents/MacOS/inittool",
-                    args: ["init"],
-                    sudo: true
-    end
-
-    uninstall_preflight do
-    set_ownership "#{appdir}/Parallels Desktop.app"
-    end
 
     uninstall delete: [
                 "/usr/local/bin/prl_convert",
