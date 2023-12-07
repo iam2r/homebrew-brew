@@ -1,7 +1,7 @@
 cask "clash-verge" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.3.7"
+  version "1.3.8"
   sha256 :no_check
 
   url "https://github.com/zzzgydi/clash-verge/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
