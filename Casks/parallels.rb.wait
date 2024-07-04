@@ -5,7 +5,7 @@ cask "parallels" do
     version "18.1.1"
     sha256 :no_check
 
-    url "https://proxy.cf.iamrazo.pro/drive.usercontent.google.com/download?id=1zlkvIcGQJOCqii8TFECz-5-s3TMJD8Xb&export=download&confirm=t"
+    url "https://proxy.cf.181918.xyz/drive.usercontent.google.com/download?id=1zlkvIcGQJOCqii8TFECz-5-s3TMJD8Xb&export=download&confirm=t"
     name "Parallels Desktop"
     desc "Desktop virtualization software"
     homepage "https://www.parallels.com/products/desktop/"
