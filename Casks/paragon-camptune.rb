@@ -6,7 +6,6 @@ cask "paragon-camptune" do
     name "Paragon CampTune"
     desc "Manage disk space on Macs with Boot Camp"
     homepage "https://www.paragon-software.com/home/camptune/"
-    end
   
     depends_on macos: ">= :sierra"
   
