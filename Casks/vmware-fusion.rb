@@ -2,13 +2,13 @@ cask "vmware-fusion" do
     version "13.5.2,23775688"
     sha256 "4d470e2160acb5da7d52d478f6ef12829c5ebe3c04e3154652466ba0bfeed3f6"
   
-    url "https://proxy.cf.181918.xyz/softwareupdate.vmware.com/cds/vmw-desktop/fusion/#{version.csv.first}/#{version.csv.second}/universal/core/com.vmware.fusion.zip.tar"
+    url "https://proxy.vercel.iamrazo.cloudns.org/softwareupdate.vmware.com/cds/vmw-desktop/fusion/#{version.csv.first}/#{version.csv.second}/universal/core/com.vmware.fusion.zip.tar"
     name "VMware Fusion"
     desc "Create, manage, and run virtual machines"
     homepage "https://www.vmware.com/products/fusion.html"
   
     livecheck do
-      url "https://proxy.cf.181918.xyz/softwareupdate.vmware.com/cds/vmw-desktop/fusion-universal.xml"
+      url "https://proxy.vercel.iamrazo.cloudns.org/softwareupdate.vmware.com/cds/vmw-desktop/fusion-universal.xml"
       regex(%r{fusion/(\d+(?:\.\d+)+/\d+)}i)
       strategy :page_match do |page, regex|
         page.scan(regex).map { |match| match&.first&.tr("/", ",") }

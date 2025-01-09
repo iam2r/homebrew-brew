@@ -2,7 +2,7 @@ cask "paragon-camptune" do
     version "10.13.433"
     sha256 :no_check
   
-    url "https://proxy.cf.181918.xyz/drive.usercontent.google.com/download?id=1A2WGwFRhGQR3OMcM5Pg6unw5Xg6OV1PJ&export=download&authuser=0&confirm=t&uuid=8be2247e-0ed8-449e-b55e-6ccf9d1fd8c5&at=APZUnTViPY0XUEWJf4t6u3pEzlDS%3A1720069281633"
+    url "https://proxy.vercel.iamrazo.cloudns.org/drive.usercontent.google.com/download?id=1A2WGwFRhGQR3OMcM5Pg6unw5Xg6OV1PJ&export=download&authuser=0&confirm=t&uuid=8be2247e-0ed8-449e-b55e-6ccf9d1fd8c5&at=APZUnTViPY0XUEWJf4t6u3pEzlDS%3A1720069281633"
     name "Paragon CampTune"
     desc "Manage disk space on Macs with Boot Camp"
     homepage "https://www.paragon-software.com/home/camptune/"
